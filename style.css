@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: fffff;
+  padding-bottom: 70px;
+}
+
+/* HEADER */
+header {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.branding img {
+  height: 40px;
+}
+
+.branding h1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+}
+
+.assistente-container {
+  display: flex;
+  align-items: center;
+}
+
+.assistente-btn {
+  font-size: 12px;
+  background-color: #0099aa;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.container {
+  padding: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #bde0ea;
+  border-left: 5px solid #0099aa;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+small {
+  display: block;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+button.primary {
+  background-color: #0099aa;
+  color: white;
+}
+
+button.secondary {
+  background-color: #007b85;
+  color: white;
+}
+
+button.disabled {
+  background-color: #e0e0e0;
+  color: #555;
+  cursor: not-allowed;
+}
+
+.sub-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 5px;
+}
+
+/* NAVBAR INFERIOR */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  color: #444;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  color: #0099aa;
+  font-weight: bold;
+}
